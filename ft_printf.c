@@ -52,7 +52,7 @@ int	ft_printf(const char *s, ...)
 	{
 		if (s[i] == '%' && s[i + 1] != '\0')
 			count += format_check(ptr, s[++i]);
-		else if (s[i] != '%' && s[i] != '\0')
+		else if (s[i] != '%' && s[i])
 			count += ft_putchar(s[i]);
 		i++;
 	}
