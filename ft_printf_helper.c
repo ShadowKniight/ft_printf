@@ -74,7 +74,7 @@ int	ft_putnbr_hexa(unsigned long int nb, char format)
 	count = 0;
 	lower = "0123456789abcdef";
 	upper = "0123456789ABCDEF";
-	if (nb > 15)
+	if (nb >= 16)
 	{
 		count += ft_putnbr_hexa(nb / 16, format);
 		count += ft_putnbr_hexa(nb % 16, format);
