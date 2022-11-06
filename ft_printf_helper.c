@@ -80,7 +80,7 @@ int	ft_putnbr_hexa(unsigned long int nb, char format)
 		count += ft_putnbr_hexa(nb % 16, format);
 	}
 	else if (nb <= 9)
-		count += ft_putchar(nb + 48);
+		count += ft_putchar(nb + '0');
 	else if (format == 'X')
 		count += ft_putchar(upper[nb]);
 	else if (format == 'x')
